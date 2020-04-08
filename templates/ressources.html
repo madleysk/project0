@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block headings %}
+<div class="jumbotron text-center" style="margin:0; padding:30px;">
+	<h1>Cap Haitian's history and culture</h1>
+</div>
+{% endblock headings %}
+
+{% block body %}
+	<div class="container">
+		<div class="row">
+			<div class="banniere" style="background-image: url({{url_for('static',filename='img/banner_citadelle.jpg')}})">
+				<div class="bgtitre"><a href="" class="underTitle">Citadelle la ferriere</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3">
+			</div>
+			<div class="col-9">
+				<div class="img">
+				  <a target="_blank" href="images/Citadelle_View.jpg">
+					<img src="{{url_for('static',filename='img/citadelle_view_croped.jpg')}}" alt="Fjords" width="800" height="600">
+				  </a>
+				  <div class="desc">La Citadelle Laferiere</div>
+				</div>
+
+				<div class="img">
+				  <a target="_blank" href="images/Milot_Haiti_6.JPG">
+					<img src="{{url_for('static',filename='img/Milot_Haiti_6.JPG')}}" alt="Forest" width="800" height="600">
+				  </a>
+				  <div class="desc">Sans-soucis Palace</div>
+				</div>
+
+				<div class="img">
+				  <a target="_blank" href="images/Cathedral_of_Cap-Haitien.jpg">
+					<img src="{{url_for('static',filename='img/cathedral_cap.jpg')}}" alt="Northern Lights" width="2592" height="1944">
+				  </a>
+				  <div class="desc">Cathedrale of Cap</div>
+				</div>
+
+				<div class="img">
+				  <a target="_blank" href="images/aeroport_cap.jpg">
+					<img src="{{url_for('static',filename='img/aeroport_cap.jpg')}}" alt="Mountains" width="550" height="413">
+				  </a>
+				  <div class="desc">International airport</div>
+				</div>
+				<div class="img">
+				  <a target="_blank" href="images/ae.jpg">
+					<img src="{{url_for('static',filename='img/ae.jpg')}}" alt="Mountains" width="600" height="450">
+				  </a>
+				  <div class="desc">Airport floor</div>
+				</div>
+				<div class="img">
+				  <a target="_blank" href="images/Liberty_of_the_Seas2.jpg">
+					<img src="{{url_for('static',filename='img/Liberty_of_the_Seas2.jpg')}}" alt="Mountains" width="800" height="594">
+				  </a>
+				  <div class="desc">Labadie beach</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock body %}

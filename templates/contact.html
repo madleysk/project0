@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block headings %}
+<div class="jumbotron text-center" style="margin:0; padding:30px;">
+	<h1>Cap Haitian's history and culture</h1>
+</div>
+{% endblock headings %}
+
+{% block body %}
+	<div class="container">
+		<form method="POST">
+			<table class="contact-form">
+				<th class="text-center" colspan="2"><h3>Message detail</h3></th>
+				<tr>
+					<td>First and last Names</td>
+					<td>
+						<input class="form-control" type="text" name="names" />
+					</td>
+				</tr>
+				<tr>
+					<td>Email*</td>
+					<td>
+						<input class="form-control" type="text" name="email" />
+					</td>
+				</tr>
+				<tr>
+					<td>Message Type</td>
+					<td>
+						<select name="msg_type">
+							<option >Select</option>
+							{% for opt in opts %}
+								<option value="{{ opt }}">{{ opt }}</option>
+							{% endfor %}
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Message</td>
+					<td>
+						<textarea class="form-control" name="msg" cols="auto"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>
+						<button type="reset" class="btn btn-primary">Cancel</button>
+						<button type="submit" class="btn btn-primary">Send</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+{% endblock body %}

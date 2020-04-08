@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block headings %}
+<div class="jumbotron text-center" style="margin:0; padding:30px;">
+	<h1>Cap Haitian's history and culture</h1>
+</div>
+{% endblock headings %}
+
+{% block body %}
+	<div class="container">
+		<div class="row">
+			<div class="banniere" style="background-image: url({{url_for('static',filename='img/headings_01.jpg')}})">
+				<div class="bgtitre"><a href="" class="underTitle">Aerial view of Cape Town</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-12">
+				<h3 class="underTitle"><a href="{{url_for('chef_lieu')}}">The Chief town</a></h3>
+				<p>The North Department (Haitian Creole: Nò) is one of the ten departments of Haiti. Its area is 2,115 km2 and its population is 970,495 inhabitants (2009 census estimate) 1. The capital and large urban center is Cap-Haitien, the former capital of Santo Domingo. Located in the south of the Atlantic Ocean, the North is part of the northern plains, the historic stronghold of white planters, chestnuts, the black army of Toussaint Louverture and anti-American rebels during the occupation of the 1930s. King Henri Christophe had several immense palaces and fortifications built around the Cape.</p>
+			</div>
+			<div class="col-md-4 col-sm-12">
+				<h3 class="underTitle"><a href="{{url_for('lieux_historiques')}}">Historic Places</a></h3>
+				<p>Cap-Haitien: founded in 1670 by Bertrand d'Ogeron and nicknamed the Paris of Saint-Domingue. Bréda, Haut-du-Cap: birthplace of Toussaint Louverture Vertières: Independence Heroes site. Jean-Jacques Dessalines won the final victory over the French on November 18, 1803. The Citadel La Ferrière: on the summit of Bonnet-à-l'Évêque, is the work of King Henry I, as well as the palace of Sans - Care to Milot. During the Haitian Revolution, Santo Domingo was divided into only three departments: the North, the West, and the South. The North Department at that time included the territory of the current departments of North-East and North-West.</p>
+			</div>
+			<div class="col-md-4 col-sm-12">
+				<h3 class="underTitle"><a href="{{url_for('divisions')}}">The Administrative Division</a></h3>
+
+				The Nord department is divided into 7 districts and 19 communes:
+					<ul>
+						<li>District of Acul-du-Nord (3 communes) :</li>
+						<li>District of Borgne (2 communes) :</li>
+						<li>District of Cap-Haïtien (3 communes) :</li>
+						<li>District of Grande-Rivière-du-Nord (2 communes) :</li>
+						<li>District of Limbé (2 communes) :</li>
+						<li>District of Plaisance (2 communes) :</li>
+						<li>District of Saint-Raphaël (5 communes) :</li>
+					</ul>
+				<a href="{{url_for('divisions')}}">Continue reading...</a>
+			</div>
+		</div>
+	</div>
+{% endblock body %}

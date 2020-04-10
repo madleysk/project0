@@ -1,0 +1,100 @@
+/*Partie page accueil et generale*/
+#titleT {
+  padding-top: 15px;
+  padding-left: 11%; }
+
+a:link {
+  text-decoration: none;
+  color: #6969FF; }
+
+a:visited {
+  text-decoration: none;
+  color: #6969FF; }
+
+a:hover {
+  color: #FF0000; }
+
+.pieds {
+  min-height: 30px;
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 5px; }
+
+.bgtitre, .underTitle {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  padding: 5px;
+  text-decoration: none; }
+
+.banniere {
+  width: 100%;
+  min-height: 300px;
+  max-height: 300px;
+  padding: 0;
+  background-position: center top;
+  background-size: cover;
+  vertical-align: top;
+  overflow: hidden;
+  margin-bottom: 10px; }
+
+.bgtitre {
+  background-color: white;
+  width: 100%;
+  opacity: 0.6;
+  margin-top: 10px;
+  height: 30px; }
+
+.underTitle {
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: medium;
+  line-height: normal; }
+
+a.underTitle:link {
+  color: #6969FF; }
+
+a.underTitle:hover {
+  color: black; }
+
+/********************Pour les pages*************/
+p {
+  text-align: justify;
+  padding: 5px; }
+
+.contact-form {
+  margin: auto;
+  max-width: 100%; }
+
+/************************La galerie**********************/
+/*nested part of my css*/
+.galery .img {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 31%;
+  display: inline-block;
+  min-width: 250px; }
+  .galery .img img {
+    width: 100%;
+    height: auto; }
+  .galery .img .desc {
+    padding: 15px;
+    text-align: center; }
+.galery .img:hover {
+  border: 1px solid #777;
+  color: #777; }
+
+/* medium screen */
+@media (max-width: 999px) {
+  .galery .img {
+    width: 47%;
+    display: inline-block; } }
+/* small screen */
+@media (max-width: 600px) {
+  .galery .img {
+    width: 100%;
+    display: inline-block; } }
+/************************Galery end...********************/
+
+/*# sourceMappingURL=mystyle.css.map */

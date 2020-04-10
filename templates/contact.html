@@ -7,8 +7,16 @@
 {% endblock headings %}
 
 {% block body %}
-	<div class="container">
-		<form method="POST">
+	<div class="">
+		<style>
+			#fcontact > table {
+				width: 600px;
+			}
+			#fcontact > table td {
+				padding: 5px;
+			}
+		</style>
+		<form method="POST" id="fcontact" >
 			<table class="contact-form">
 				<th class="text-center" colspan="2"><h3>Message detail</h3></th>
 				<tr>
@@ -43,8 +51,8 @@
 				<tr>
 					<td>&nbsp;</td>
 					<td>
-						<button type="reset" class="btn btn-primary">Cancel</button>
 						<button type="submit" class="btn btn-primary">Send</button>
+						<button type="reset" class="btn btn-primary">Cancel</button>
 					</td>
 				</tr>
 			</table>

@@ -7,18 +7,16 @@
 {% endblock headings %}
 
 {% block body %}
-	<div class="container">
+	<div class="">
 		<div class="row">
-			<div class="banniere" style="background-image: url({{url_for('static',filename='img/banner_citadelle.jpg')}})">
-				<div class="bgtitre"><a href="" class="underTitle">Citadelle la ferriere</a>
+			<div class="banniere" style="background-image: url({{url_for('static',filename='img/banner_citadelle_guns.jpg')}})">
+				<div class="bgtitre"><a href="" class="underTitle">Citadelle old guns view</a>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-3">
-			</div>
-			<div class="col-9">
+			<div class="col-12 text-center">
 				<div class="img">
-				  <a target="_blank" href="images/Citadelle_View.jpg">
+				  <a target="_blank" href="{{url_for('static',filename='img/citadelle_view_croped.jpg')}}">
 					<img src="{{url_for('static',filename='img/citadelle_view_croped.jpg')}}" alt="Fjords" width="800" height="600">
 				  </a>
 				  <div class="desc">La Citadelle Laferiere</div>

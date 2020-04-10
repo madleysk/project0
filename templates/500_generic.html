@@ -2,11 +2,7 @@
 <html>
     <head>
         <title>
-			{% if title %}
-				{{dico['app_name']}} - {{title}}
-			{% else %}
-				{{dico['app_name']}}
-			{% endif %}
+			Error occured
         </title>
         <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,10 +12,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     </head>
-    <body>
-        {% block headings %}
-        {% endblock headings %}
-        
+    <body>        
         <!-- menu -->
 			 <nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
 			  <!-- Brand -->
@@ -50,8 +43,8 @@
 			</nav> 
         <!-- end menu -->
         <div class="container shadow mb-5 rounded-bottom">
-        {% block body %}
-        {% endblock body %}
+			<h2>An error has occured !</h2>
+			<p>Error description: {{ e }}</p>
         <div class="pieds">
 			<p class="text-center">&copy; Madley Sk. - 2020</p>
 			<p class="text-right font-italic" style="font-size:small">sources: <a href="https://google.com">google</a>, <a href="https://wikipedia.org">wikipedia</a></p>

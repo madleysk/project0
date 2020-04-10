@@ -5,6 +5,12 @@
   padding-left: 11%;
 }
 
+.content-body {
+	box-shadow: 5px 5px #BFBFBF;
+	border-radius: 0 0 10px 10px;
+	border: solid 1px #BFBFBF;
+}
+
 a:link{
 	text-decoration:none;
 	color:blue;
@@ -98,6 +104,7 @@ a.m:hover {
   font-size: medium;
   line-height: normal;
   color:black;
+  padding: 5px;
 }
 a.underTitle:link{
   color: blue;
@@ -106,48 +113,35 @@ a.underTitle:hover {
   color: black;
 }
 /********************Pour les pages*************/
-.left{
-    width:25%;
-    height:auto;
-    border: 1px dashed white;
-    background-color:#deeff5;
-    vertical-align:top;
-    padding-left:0px;
-}
-.right{
-    width:75%;
-    height:auto;
-    border: 1px dashed white;
-    background-color:#deeff5;
-	vertical-align:top;
-}
-.nav_left{
-    text-decoration:none;
-    position:relative;
-    left:0px;
-    
-}
-.left_item{
-   
-    width:100%;
-    background-color:white;
-    padding:5px;
-}
 p{
     text-align:justify;
+    padding: 5px;
 }
 .contact-form {
 	margin: auto;
 	max-width: 100%;
-	min-width: 300px;
 }
 
 /************************La galerie**********************/
 div.img {
     margin: 5px;
     border: 1px solid #ccc;
-    float: left;
+    /*float: left;*/
     width: 31%;
+    display: inline-block;
+    min-width: 250px;
+}
+@media (max-width: 999px) {
+	div.img {
+		width: 47%;
+		display: inline-block;
+	}
+}
+@media (max-width: 600px) {
+	div.img {
+		width: 100%;
+		display: inline-block;
+	}
 }
 
 div.img:hover {
